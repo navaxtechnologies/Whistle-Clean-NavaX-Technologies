@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://whistleclean.com/sitemap.xml
