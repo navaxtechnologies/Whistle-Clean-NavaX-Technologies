@@ -15,7 +15,9 @@
 | [02-competitor-benchmark.md](02-competitor-benchmark.md) | 2 | $100K+ MRR benchmark profile + 15-metric side-by-side comparison |
 | [03-gap-matrix.md](03-gap-matrix.md) | 3 | Full bottleneck gap matrix sorted by priority score + Quick Wins |
 | [04-90-day-plan.md](04-90-day-plan.md) | 4 | Week-by-week execution plan with owners, tools, and MRR targets |
-| [05-website-and-deploy.md](05-website-and-deploy.md) | 5 | Website extension summary + Railway deployment checklist |
+| [05-website-and-deploy.md](05-website-and-deploy.md) | 5 | Website build summary + what changed |
+| [06-integrations-setup.md](06-integrations-setup.md) | 6 | Bookings & inquiries → email + Google Sheets + Google Calendar (Apps Script + Calendly) |
+| [07-railway-deploy.md](07-railway-deploy.md) | 7 | Railway deployment — click-by-click (dashboard + CLI) |
 | [executive-summary.md](executive-summary.md) | — | 5-bullet highest-leverage overview |
 
 The **website code** itself lives in this same project (`client/`). Phase 5 changes are applied directly to the codebase — see `05-website-and-deploy.md` for what changed and how to ship it.
