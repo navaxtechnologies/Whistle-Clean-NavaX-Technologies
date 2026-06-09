@@ -32,7 +32,7 @@
 **Test it now:** paste this in a terminal (replace both placeholders):
 ```bash
 curl -X POST "YOUR_WEBAPP_URL" -H "Content-Type: application/json" \
-  -d '{"token":"YOUR_SECRET","type":"inquiry","name":"Test Lead","email":"test@example.com","phone":"210-555-0000","service":"window","date":"2026-07-01","message":"Just testing"}'
+  -d '{"token":"YOUR_SECRET","type":"inquiry","name":"Test Lead","email":"test@example.com","phone":"210-555-0000","service":"apartment","date":"2026-07-01","message":"Just testing"}'
 ```
 You should get `{"ok":true,...}`, a new row in the Sheet, an email to whistleclean100@gmail.com, and a calendar event on July 1.
 

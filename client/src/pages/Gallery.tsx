@@ -8,7 +8,7 @@ export default function Gallery() {
   useDocumentMeta({
     title: "Before & After Gallery | Whistle Clean San Antonio",
     description:
-      "See real before/after results from Whistle Clean across San Antonio — pressure washing, soft washing, window cleaning, gutters, solar panels, and deck restoration.",
+      "See real before/after results from Whistle Clean across San Antonio — apartment cleaning, office cleaning, laundry rooms, deep cleaning, and move-out turnovers.",
     path: "/gallery",
   });
   return (

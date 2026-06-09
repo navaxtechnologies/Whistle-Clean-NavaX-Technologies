@@ -42,7 +42,7 @@ These five are all **High revenue impact + Low effort** and can be live within *
 2. **Turn on automated review requests** — convert 20 years of happy clients into a flood of Google reviews (text-after-every-job + a one-time blast to past clients). *Est. +$400–$800/mo via ranking + trust.* Owner: Fabrizio + NavaX.
 3. **Add online booking (Calendly, free)** — capture the impulse before it cools. Embed the same link on every profile. *Est. +$600–$1,500/mo.* Owner: Fabrizio.
 4. **Add card payments (Stripe or Square)** — removes friction and enables auto-charge for the recurring plan. *Est. faster cash + enables MRR.* Owner: Jose.
-5. **Launch the Monthly Maintenance Plan ($199–$349/mo)** — the single change that converts one-off revenue into MRR. Everything else exists to feed this. *Est. the entire $8K–$12K MRR target.* Owner: Jose + NavaX.
+5. **Launch a Recurring Cleaning Plan** (weekly / biweekly / monthly apartment & office cleaning at locked-in member pricing, card on file) — the single change that converts one-off jobs into MRR. Everything else exists to feed this. *Est. the entire $8K–$12K MRR target.* Owner: Jose + NavaX.
 
 > **Honorable mentions also at Priority 6.0:** finishing & deploying the website (Phase 5) and adding the Spanish/bilingual layer. Both ship inside Weeks 1–2 of the plan.
 

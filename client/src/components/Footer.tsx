@@ -16,14 +16,12 @@ const quickLinks = [
 ];
 
 const services = [
-  { en: "Window Cleaning", es: "Limpieza de Ventanas" },
-  { en: "Pressure Washing", es: "Lavado a Presión" },
-  { en: "Soft Washing", es: "Lavado Suave" },
-  { en: "Mold & Mildew Removal", es: "Eliminación de Moho y Hongos" },
-  { en: "Deck Restoration", es: "Restauración de Terrazas" },
-  { en: "Solar Panel Cleaning", es: "Limpieza de Paneles Solares" },
-  { en: "Gutter Cleaning", es: "Limpieza de Canaletas" },
-  { en: "Painting & Staining", es: "Pintura y Tinte" },
+  { en: "Apartment Cleaning", es: "Limpieza de Apartamentos" },
+  { en: "Office Cleaning", es: "Limpieza de Oficinas" },
+  { en: "Laundry Room Cleaning", es: "Limpieza de Cuartos de Lavado" },
+  { en: "Touch-Up Cleaning", es: "Limpieza de Retoque" },
+  { en: "Heavy / Deep Cleaning", es: "Limpieza Pesada / Profunda" },
+  { en: "Move-Out Cleaning", es: "Limpieza de Mudanza" },
 ];
 
 export default function Footer() {
@@ -45,8 +43,8 @@ export default function Footer() {
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-4">
               {t(
-                "Professional exterior cleaning in San Antonio, TX — windows, pressure washing, soft washing & more. Licensed, insured, and locally owned for over 20 years.",
-                "Limpieza profesional de exteriores en San Antonio, TX — ventanas, lavado a presión, lavado suave y más. Con licencia, asegurados y de propiedad local por más de 20 años."
+                "Professional apartment, office & laundry-room cleaning in San Antonio, TX. Licensed, insured, and locally owned for over 20 years.",
+                "Limpieza profesional de apartamentos, oficinas y cuartos de lavado en San Antonio, TX. Con licencia, asegurados y de propiedad local por más de 20 años."
               )}
             </p>
             <p className="text-amber-400 font-semibold text-sm">Se Habla Espanol</p>
@@ -97,6 +95,10 @@ export default function Footer() {
                 <Mail className="w-4 h-4 shrink-0" />
                 whistleclean100@gmail.com
               </a>
+              <div className="flex items-start gap-2 text-slate-400 text-sm">
+                <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
+                <span>19179 Blanco Rd. Suite 105-482<br />San Antonio, TX 78258</span>
+              </div>
               <div className="flex items-start gap-2 text-slate-400 text-sm">
                 <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
                 <span>{t("San Antonio, TX & Surrounding Areas", "San Antonio, TX y Áreas Cercanas")}</span>

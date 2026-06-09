@@ -14,16 +14,13 @@ const CALENDLY_URL =
   (import.meta as any).env?.VITE_CALENDLY_URL || "https://calendly.com/whistleclean-sa";
 
 const SERVICE_TYPES = [
-  { en: "Window Cleaning", es: "Limpieza de Ventanas" },
-  { en: "Pressure Washing", es: "Lavado a Presión" },
-  { en: "Soft Washing", es: "Lavado Suave" },
-  { en: "Mold & Mildew Removal", es: "Eliminación de Moho y Hongos" },
-  { en: "Deck Restoration", es: "Restauración de Terrazas" },
-  { en: "Solar Panel Cleaning", es: "Limpieza de Paneles Solares" },
-  { en: "Gutter Cleaning", es: "Limpieza de Canaletas" },
-  { en: "Painting & Staining", es: "Pintura y Tinte" },
-  { en: "Monthly Maintenance Plan", es: "Plan de Mantenimiento Mensual" },
-  { en: "Commercial / HOA Account", es: "Cuenta Comercial / HOA" },
+  { en: "Apartment Cleaning", es: "Limpieza de Apartamentos" },
+  { en: "Office Cleaning", es: "Limpieza de Oficinas" },
+  { en: "Laundry Room Cleaning", es: "Limpieza de Cuartos de Lavado" },
+  { en: "Touch-Up Cleaning", es: "Limpieza de Retoque" },
+  { en: "Heavy / Deep Cleaning", es: "Limpieza Pesada / Profunda" },
+  { en: "Move-Out Cleaning", es: "Limpieza de Mudanza" },
+  { en: "Recurring / Property Manager", es: "Recurrente / Administrador" },
 ];
 
 export default function Book() {
@@ -31,7 +28,7 @@ export default function Book() {
   useDocumentMeta({
     title: "Book Online | Whistle Clean San Antonio",
     description:
-      "Book your exterior cleaning in San Antonio online in 60 seconds. Window cleaning, pressure washing, soft washing, gutters, solar panels and more.",
+      "Book your apartment, office, or laundry-room cleaning in San Antonio online in 60 seconds. Move-out and deep cleaning available.",
     path: "/book",
   });
 

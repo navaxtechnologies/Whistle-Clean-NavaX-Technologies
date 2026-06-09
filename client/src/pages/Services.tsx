@@ -7,9 +7,9 @@ import { useDocumentMeta } from "@/lib/seo";
 
 export default function Services() {
   useDocumentMeta({
-    title: "Services | Window Cleaning, Pressure Washing & More | Whistle Clean San Antonio",
+    title: "Services | Apartment, Office & Laundry Cleaning | Whistle Clean San Antonio",
     description:
-      "Whistle Clean's exterior services in San Antonio: window cleaning, pressure washing, soft washing, mold & mildew removal, deck restoration, solar panel cleaning, gutters, painting & staining.",
+      "Whistle Clean's cleaning services in San Antonio: apartment cleaning, office cleaning, laundry room cleaning, touch-up, heavy/deep cleaning, and move-out cleaning.",
     path: "/services",
   });
   return (

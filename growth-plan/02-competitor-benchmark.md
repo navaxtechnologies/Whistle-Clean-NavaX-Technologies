@@ -12,7 +12,7 @@ The prompt offered four candidates. The strongest teaching match for Whistle Cle
 
 Reasoning: Washe started where Whistle Clean is now — a strong local operator running on referrals and manual booking — and the lever that moved them was *not* a bigger ad budget; it was **systematizing booking, payments, follow-up, and recurring revenue**. That is exactly the gap Whistle Clean has. (Two Maids & A Mop and MaidThis are bigger but their scale comes from franchising/multi-location, which isn't your near-term path. Washe's single-brand automation story maps 1:1 to your next 12 months.)
 
-> Note: Washe and the others are primarily **interior/residential maid services**. The *levers* transfer perfectly (recurring plans, booking software, paid ads, automated follow-up); the *service mix* differs. Where exterior-specific economics matter, I've flagged it.
+> Note: Washe and the others are **interior/residential cleaning services** — the same category as Whistle Clean (apartment, office & residential cleaning). Both the *levers* (recurring plans, booking software, paid ads, automated follow-up) **and** the service mix map closely, which makes this an especially clean benchmark.
 
 ---
 

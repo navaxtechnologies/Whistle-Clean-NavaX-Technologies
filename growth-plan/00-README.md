@@ -1,6 +1,6 @@
 # Whistle Clean — Growth Engagement Deliverables
 
-**Client:** Whistle Clean — family-owned exterior cleaning, San Antonio, TX (est. ~2002–2005, 20+ years)
+**Client:** Whistle Clean — family-owned cleaning company (apartment, office & laundry-room cleaning), San Antonio, TX (est. ~2002–2005, 20+ years)
 **Owner:** Jose Romero — (210) 414-5688 · **Co-operator:** Fabrizio Romero — (210) 323-9752
 **Prepared by:** NavaX Technologies (Mauricio Romero) · Live case study
 **Date:** June 2026

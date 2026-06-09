@@ -4,7 +4,7 @@
 
 1. **Claim & optimize Google Business Profile + turn on automated review requests.** Free, ~1 day, and the single biggest lever for a 20-year, 5-star local business that's currently invisible in search. Converts reputation into the "near me" map-pack traffic that drives the most high-intent leads. *Est. +$1,000–$1,800/mo.*
 
-2. **Launch the Monthly Maintenance Plan ($199–$349/mo) with card-on-file.** This is the move that turns Whistle Clean from a *job* business into a *recurring-revenue* business. It's the entire reason the $8K–$12K MRR target is reachable — recurring revenue stacks and compounds. *The core of the MRR goal.*
+2. **Launch a Recurring Cleaning Plan (weekly/biweekly/monthly) with card-on-file.** This is the move that turns Whistle Clean from a *job* business into a *recurring-revenue* business. It's the entire reason the $8K–$12K MRR target is reachable — recurring revenue stacks and compounds. *The core of the MRR goal.*
 
 3. **Ship the website (done) and add online booking.** The site is built, corrected (it was wrongly configured for interior cleaning), and deploy-ready with `/services`, `/pricing`, `/book`, and a working quote form. Add the Calendly link and it captures demand 24/7 instead of letting "I'll call later" leads cool. *Est. +$600–$1,500/mo.*
 

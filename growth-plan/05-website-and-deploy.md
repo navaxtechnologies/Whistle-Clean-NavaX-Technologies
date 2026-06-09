@@ -6,20 +6,20 @@ A polished site already existed in the repo (React 19 + Vite + Tailwind, single 
 
 | Finding | Severity | Fix applied |
 |---|---|---|
-| **Site content was for the wrong business** — services, gallery, and the contact dropdown all listed *interior* janitorial work (residential, apartment, office, move-out). | 🔴 Critical | Rewrote `ServicesSection`, `GallerySection`, and the contact form's service list to the real **exterior** services (window cleaning, pressure washing, soft washing, mold/mildew, deck restoration, solar panels, gutters, painting/staining). |
+| **Service content** | ✅ Resolved | Services, gallery, pricing, and the contact dropdown now match the **real business — interior cleaning**: Apartment Cleaning (real flat-rate prices: efficiency $95 / 1×1 $115 / 2×2 $125 / 3×2 $135 / touch-up $60 / heavy $40), Office & Laundry Room (custom quote), plus Move-Out and a Recurring plan. Source of truth = the company's own printed proposal. *(An interim draft briefly used exterior services; corrected.)* |
 | **No booking, pricing, or dedicated pages** — single page with anchor links only. | 🔴 High | Added real routes: `/services`, `/gallery`, `/pricing`, `/book`, `/contact`. |
 | **Build was broken** — `package.json` referenced `server/index.ts`, which didn't exist; `npm run build`/`start` would fail. | 🔴 Critical | Added a production Express server (`server/index.ts`) that serves the built SPA, provides a route fallback, and handles `/api/quote`. Build now passes. |
 | **Contact form had no real backend** — posted to `/api/quote`, which only existed in Vite dev. | 🟠 Medium | The new server implements `/api/quote` with validation and optional CRM-webhook forwarding (`QUOTE_WEBHOOK_URL`). |
 | **No per-page SEO** in the SPA. | 🟠 Medium | Added `useDocumentMeta` hook — sets title, description, canonical, and scroll-reset per route. |
-| **Stale SEO** — title/description described "residential, commercial, specialty cleaning"; structured data used the wrong domain. | 🟠 Medium | Updated `index.html` title/description to the spec, fixed domain to `whistlecleaningsa.com`, added `hasOfferCatalog` (8 services) + `sameAs` to the LocalBusiness JSON-LD. |
-| **Phone numbers** | ✅ Verified | Confirmed (210) 859-4422 is the real primary line; added Fabrizio's (210) 323-9752 to the contact section. |
+| **Stale SEO** — title/description were generic/old; structured data used the wrong domain & address. | 🟠 Medium | Updated `index.html` title/description (Apartment & Office Cleaning), fixed domain to `whistlecleaningsa.com`, set the real address (19179 Blanco Rd. Suite 105-482, 78258), and added `hasOfferCatalog` (6 interior services) + `sameAs` (real Yelp). |
+| **Phone / NAP** | ✅ Verified | Primary (210) 859-4422; contact **Leo Romero** (210) 414-5688; email whistleclean100@gmail.com; address 19179 Blanco Rd. Suite 105-482, San Antonio, TX 78258. |
 | `sitemap.xml` / `robots.txt` listed only the homepage and wrong domain. | 🟡 Low | Updated both to the new domain and all 6 routes. |
 
 ## 5B — What was built (files changed)
 
-**New pages** (`client/src/pages/`): `Book.tsx` (Calendly inline embed + service selector + call/text fallbacks), `Pricing.tsx` (Standard/Premium/Monthly-Maintenance tiers, per-service starting prices, commercial CTA), `Services.tsx`, `Gallery.tsx`, `Contact.tsx`.
-**New infra:** `server/index.ts` (production server), `client/src/lib/seo.ts` (per-route SEO), `.env.example`.
-**Edited:** `App.tsx` (routes), `Navbar.tsx` (multi-page routing + "Book Now" CTA), `ServicesSection.tsx` / `GallerySection.tsx` / `ContactSection.tsx` (correct exterior content), `index.html` (SEO + JSON-LD + GA4 placeholder), `public/sitemap.xml`, `public/robots.txt`.
+**New pages** (`client/src/pages/`): `Book.tsx` (Calendly inline embed + service selector + call/text fallbacks), `Pricing.tsx` (apartment price list + office/laundry custom quote + recurring/property-manager CTA), `Services.tsx`, `Gallery.tsx`, `Contact.tsx`.
+**New infra:** `server/index.ts` (production server), `client/src/lib/seo.ts` (per-route SEO), `client/src/contexts/LanguageContext.tsx` (EN/ES bilingual), `.env.example`.
+**Edited:** `App.tsx` (routes), `Navbar.tsx` (multi-page routing + EN/ES toggle + "Book Now" CTA), `ServicesSection.tsx` / `GallerySection.tsx` / `ContactSection.tsx` (correct interior content, bilingual), `index.html` (SEO + JSON-LD + GA4 placeholder), `public/sitemap.xml`, `public/robots.txt`.
 
 **Verified:** `npm run build` passes (client + server bundle). Production server tested — all routes return 200, `/api/quote` validates input (200 valid / 400 missing fields), `sitemap.xml` & `robots.txt` serve, correct SEO title/description/JSON-LD in the served HTML.
 

@@ -8,7 +8,7 @@ export default function Contact() {
   useDocumentMeta({
     title: "Contact | Whistle Clean San Antonio",
     description:
-      "Contact Whistle Clean San Antonio for a free exterior cleaning quote. Call (210) 859-4422 or send a message. Serving San Antonio & surrounding areas. Se habla español.",
+      "Contact Whistle Clean San Antonio for a free cleaning quote — apartments, offices & laundry rooms. Call (210) 859-4422 or send a message. Serving San Antonio & surrounding areas. Se habla español.",
     path: "/contact",
   });
   return (

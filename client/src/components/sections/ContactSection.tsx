@@ -30,9 +30,9 @@ type ContactItem = {
 
 const contactInfo: ContactItem[] = [
   { icon: Phone, label: "Phone (Primary)", labelEs: "Teléfono (Principal)", value: "(210) 859-4422", valueEs: null, href: "tel:+12108594422" },
-  { icon: Phone, label: "Jose Romero", labelEs: "Jose Romero", value: "(210) 414-5688", valueEs: null, href: "tel:+12104145688" },
-  { icon: Phone, label: "Fabrizio Romero", labelEs: "Fabrizio Romero", value: "(210) 323-9752", valueEs: null, href: "tel:+12103239752" },
+  { icon: Phone, label: "Leo Romero", labelEs: "Leo Romero", value: "(210) 414-5688", valueEs: null, href: "tel:+12104145688" },
   { icon: Mail, label: "Email", labelEs: "Correo", value: "whistleclean100@gmail.com", valueEs: null, href: "mailto:whistleclean100@gmail.com" },
+  { icon: MapPin, label: "Address", labelEs: "Dirección", value: "19179 Blanco Rd. Suite 105-482, San Antonio, TX 78258", valueEs: null, href: null },
   { icon: MapPin, label: "Service Area", labelEs: "Área de Servicio", value: "San Antonio, TX & Surrounding Areas", valueEs: "San Antonio, TX y Áreas Cercanas", href: null },
   { icon: Clock, label: "Business Hours", labelEs: "Horario", value: "Mon-Fri: 7AM-6PM | Sat: 8AM-4PM", valueEs: "Lun-Vie: 7AM-6PM | Sáb: 8AM-4PM", href: null },
   { icon: Languages, label: "Se Habla Espanol", labelEs: "Se Habla Español", value: "Bilingual service available", valueEs: "Servicio bilingüe disponible", href: null },
@@ -199,16 +199,13 @@ export default function ContactSection() {
                       <SelectValue placeholder={t("Select a service", "Seleccione un servicio")} />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="window">{t("Window Cleaning", "Limpieza de Ventanas")}</SelectItem>
-                      <SelectItem value="pressure">{t("Pressure Washing", "Lavado a Presión")}</SelectItem>
-                      <SelectItem value="soft">{t("Soft Washing", "Lavado Suave")}</SelectItem>
-                      <SelectItem value="mold">{t("Mold & Mildew Removal", "Eliminación de Moho y Hongos")}</SelectItem>
-                      <SelectItem value="deck">{t("Deck Restoration", "Restauración de Terrazas")}</SelectItem>
-                      <SelectItem value="solar">{t("Solar Panel Cleaning", "Limpieza de Paneles Solares")}</SelectItem>
-                      <SelectItem value="gutter">{t("Gutter Cleaning", "Limpieza de Canaletas")}</SelectItem>
-                      <SelectItem value="painting">{t("Painting & Staining", "Pintura y Tinte")}</SelectItem>
-                      <SelectItem value="maintenance">{t("Monthly Maintenance Plan", "Plan de Mantenimiento Mensual")}</SelectItem>
-                      <SelectItem value="commercial">{t("Commercial / HOA Account", "Cuenta Comercial / HOA")}</SelectItem>
+                      <SelectItem value="apartment">{t("Apartment Cleaning", "Limpieza de Apartamentos")}</SelectItem>
+                      <SelectItem value="office">{t("Office Cleaning", "Limpieza de Oficinas")}</SelectItem>
+                      <SelectItem value="laundry">{t("Laundry Room Cleaning", "Limpieza de Cuartos de Lavado")}</SelectItem>
+                      <SelectItem value="touchup">{t("Touch-Up Cleaning", "Limpieza de Retoque")}</SelectItem>
+                      <SelectItem value="deep">{t("Heavy / Deep Cleaning", "Limpieza Pesada / Profunda")}</SelectItem>
+                      <SelectItem value="moveout">{t("Move-Out Cleaning", "Limpieza de Mudanza")}</SelectItem>
+                      <SelectItem value="recurring">{t("Recurring / Property Manager", "Recurrente / Administrador")}</SelectItem>
                       <SelectItem value="other">{t("Other", "Otro")}</SelectItem>
                     </SelectContent>
                   </Select>

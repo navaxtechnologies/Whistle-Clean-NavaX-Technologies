@@ -17,7 +17,7 @@ Every item: **[Owner] · Tool · Revenue impact · Time.**
 ### Week 2 — Get paid & get a home base
 - **Deploy the website** (Phase 5) with correct phones, booking, pricing, before/after. **[NX] · this repo + Railway · +$1,000/mo · 1–2 days**
 - **Set up Stripe or Square** for card payments; enable card-on-file. **[J] · Square (free hardware) or Stripe · enables MRR + faster cash · 2 hrs**
-- **Build the "Monthly Maintenance Plan"** — Window + Pressure Wash combo, **$199–$349/mo** by property size. Define exactly what's included per tier. **[J + NX] · — · the core MRR engine · 2 hrs**
+- **Build the "Recurring Cleaning Plan"** — weekly / biweekly / monthly apartment & office cleaning at locked-in member pricing (card on file). Define exactly what's included per visit. **[J + NX] · — · the core MRR engine · 2 hrs**
 
 ### Week 3 — Turn on content + reactivation
 - **Launch Instagram/FB content** — post 3 before/after reels from existing or freshly filmed jobs. **[F] · Instagram/CapCut · +$500/mo organic · 2 hrs**
@@ -36,7 +36,7 @@ Every item: **[Owner] · Tool · Revenue impact · Time.**
 ## Phase 4B — Outreach Engine (Weeks 5–8)
 
 - **Post 3x/week on IG + FB** — before/after, testimonials, service spotlights. **[F] · Meta Business Suite scheduler · +$500/mo · 2 hrs/wk**
-- **Run first Google Local Services Ad** — **$300/mo** budget, target "window cleaning San Antonio," "pressure washing San Antonio." **[NX setup, J funds] · Google LSA · +$1,500/mo · setup 2 hrs**
+- **Run first Google Local Services Ad** — **$300/mo** budget, target "apartment cleaning San Antonio," "house cleaning San Antonio," "move out cleaning San Antonio." **[NX setup, J funds] · Google LSA · +$1,500/mo · setup 2 hrs**
 - **Follow up on all Week-4 commercial outreach — close the first commercial contract.** **[F] · Phone · +$800–$2,000/mo · ongoing**
 - **Launch bilingual content** — alternate English/Spanish posts targeting SA's Hispanic homeowner market. **[F + NX] · Instagram · +$800/mo · folded into posting**
 - **Add Whistle Clean to Nextdoor** as a business; post a neighborhood intro in 5 SA neighborhoods. **[F] · Nextdoor (free) · +$300–$600/mo · 1 hr**
@@ -51,8 +51,8 @@ Every item: **[Owner] · Tool · Revenue impact · Time.**
 - **Activate the referral program systemwide** — on invoices, website footer, and follow-up texts. **[NX + F] · — · +$500/mo · 2 hrs**
 - **Build a simple monthly client report** (PDF/text) for recurring clients showing work completed — drives retention. **[NX] · template · retention · 1 hr/mo**
 - **Raise prices 10–15% on one-off jobs** — reputation + demand now justify it. **[J] · — · +10–15% margin · 1 hr**
-- **Target 3 HOA contracts** — HOAs have 50–300 homes and need consistent exterior cleaning. **[F] · Phone/email · +$2,000–$5,000/mo potential · ongoing**
-- **Document the top 5 SOPs** — window cleaning, pressure washing, client communication, scheduling, quality check. **[J + F, NX writes up] · Google Docs · enables delegation · 4 hrs**
+- **Target 3 apartment-complex / property-manager contracts** — complexes have many units needing turnover (move-out) cleaning and common-area/laundry-room cleaning on repeat. **[F] · Phone/email · +$2,000–$5,000/mo potential · ongoing**
+- **Document the top 5 SOPs** — apartment full-clean process, move-out/turnover process, client communication, scheduling, quality check. **[J + F, NX writes up] · Google Docs · enables delegation · 4 hrs**
 - **Review MRR vs. target.** **[J + NX] · — · — · 1 hr**
 
 **🎯 Month 3 MRR target: $8,000–$12,000** (recurring plans + LSA + commercial/HOA contracts compounding).
@@ -72,7 +72,7 @@ Every item: **[Owner] · Tool · Revenue impact · Time.**
 > **ES:** "Especial de primavera — reserve esta semana y ahorre 15%. Responda BOOK o llame al (210) 414-5688. — Whistle Clean SA"
 
 ### Commercial cold outreach (call opener + follow-up text)
-> **Call opener:** "Hi, this is Fabrizio with Whistle Clean — we're a San Antonio, family-owned exterior cleaning company with 20 years and a perfect 5-star record. We're offering a free first cleaning to a few local [property type] this month so you can see our work risk-free. Could I get 10 minutes to look at your property?"
+> **Call opener:** "Hi, this is Fabrizio with Whistle Clean — we're a San Antonio, family-owned cleaning company with 20 years and a perfect 5-star record. We're offering a free first cleaning to a few local [apartment complexes / offices] this month so you can see our work risk-free. Could I get 10 minutes to look at your property?"
 >
 > **Follow-up text (EN):** "Thanks for chatting! Here's our work: [website]. Happy to set up that free demo cleaning whenever works — just reply with a day. — Fabrizio, Whistle Clean (210) 414-5688"
 

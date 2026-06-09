@@ -8,12 +8,12 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 // NOTE: replace `image` paths with real before/after job photos as they're captured.
 const galleryItems = [
-  { label: "Driveway Pressure Wash — Stone Oak", labelEs: "Lavado a Presión de Entrada — Stone Oak", category: "Pressure Washing", categoryEs: "Lavado a Presión", image: "/images/gallery/driveway-pressure-wash.png" },
-  { label: "Roof Soft Wash — Alamo Heights", labelEs: "Lavado Suave de Techo — Alamo Heights", category: "Soft Washing", categoryEs: "Lavado Suave", image: "/images/gallery/roof-soft-wash.png" },
-  { label: "Window Cleaning — Downtown Storefront", labelEs: "Limpieza de Ventanas — Local en Downtown", category: "Window Cleaning", categoryEs: "Limpieza de Ventanas", image: "/images/gallery/window-cleaning.png" },
-  { label: "Gutter Clear-Out — Helotes", labelEs: "Limpieza de Canaletas — Helotes", category: "Gutter Cleaning", categoryEs: "Limpieza de Canaletas", image: "/images/gallery/gutter-cleaning.png" },
-  { label: "Solar Panel Restoration — Boerne", labelEs: "Restauración de Paneles Solares — Boerne", category: "Solar Panels", categoryEs: "Paneles Solares", image: "/images/gallery/solar-panel-clean.png" },
-  { label: "Deck Restoration — Stone Oak", labelEs: "Restauración de Terraza — Stone Oak", category: "Deck Restoration", categoryEs: "Restauración de Terrazas", image: "/images/gallery/deck-restoration.png" },
+  { label: "Apartment Full Clean — 2×2 Unit", labelEs: "Limpieza Completa de Apartamento — Unidad 2×2", category: "Apartment Cleaning", categoryEs: "Limpieza de Apartamentos", image: "/images/gallery/apartment-clean.png" },
+  { label: "Move-Out Turnover — Northwest SA", labelEs: "Limpieza de Mudanza — Noroeste de SA", category: "Move-Out Cleaning", categoryEs: "Limpieza de Mudanza", image: "/images/gallery/moveout-clean.png" },
+  { label: "Office Cleaning — Medical Office", labelEs: "Limpieza de Oficina — Consultorio Médico", category: "Office Cleaning", categoryEs: "Limpieza de Oficinas", image: "/images/gallery/office-clean.png" },
+  { label: "Laundry Room Refresh — Apartment Complex", labelEs: "Cuarto de Lavado — Complejo de Apartamentos", category: "Laundry Room Cleaning", categoryEs: "Limpieza de Cuartos de Lavado", image: "/images/gallery/laundry-clean.png" },
+  { label: "Heavy / Deep Clean — Efficiency", labelEs: "Limpieza Profunda — Eficiencia", category: "Heavy / Deep Cleaning", categoryEs: "Limpieza Pesada / Profunda", image: "/images/gallery/deep-clean.png" },
+  { label: "Kitchen Deep Clean — Apartment", labelEs: "Limpieza Profunda de Cocina — Apartamento", category: "Apartment Cleaning", categoryEs: "Limpieza de Apartamentos", image: "/images/gallery/kitchen-clean.png" },
 ];
 
 export default function GallerySection() {
