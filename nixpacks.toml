@@ -1,0 +1,4 @@
+# Force npm (the repo uses package-lock.json). `npm install` is used instead of
+# `npm ci` so the build can't fail on a lockfile-sync mismatch.
+[phases.install]
+cmds = ["npm install"]
