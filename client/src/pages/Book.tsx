@@ -11,7 +11,8 @@ import { useDocumentMeta } from "@/lib/seo";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const CALENDLY_URL =
-  (import.meta as any).env?.VITE_CALENDLY_URL || "https://calendly.com/whistleclean-sa";
+  (import.meta as any).env?.VITE_CALENDLY_URL ||
+  "https://calendly.com/navaxtechnologies/cleaning-estimate";
 
 const SERVICE_TYPES = [
   { en: "Apartment Cleaning", es: "Limpieza de Apartamentos" },
