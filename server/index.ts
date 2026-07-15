@@ -21,6 +21,18 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const publicDir = path.join(__dirname, "public");
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// The contact form's "Preferred Service Date" is an <input type="date"> (YYYY-MM-DD).
+const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+
+/**
+ * True only for a real calendar date in YYYY-MM-DD form. The round-trip matters:
+ * Date.parse("2026-02-31") happily rolls over to March 3 instead of failing.
+ */
+function isRealISODate(value: string): boolean {
+  if (!DATE_RE.test(value)) return false;
+  const parsed = new Date(`${value}T00:00:00Z`);
+  return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
+}
 
 // Client-side routes that render a real page (HTTP 200). Anything else that
 // falls through to the SPA shell is a genuine 404.
@@ -98,6 +110,7 @@ app.post("/api/quote", quoteLimiter, async (req, res) => {
   const phone = typeof raw.phone === "string" ? raw.phone.trim() : "";
   const message = typeof raw.message === "string" ? raw.message.trim() : "";
   const service = typeof raw.service === "string" ? raw.service.trim() : "";
+  const date = typeof raw.date === "string" ? raw.date.trim() : "";
 
   if (!name || !email) {
     return res.status(400).json({ success: false, error: "Name and email are required." });
@@ -116,6 +129,11 @@ app.post("/api/quote", quoteLimiter, async (req, res) => {
   }
   if (service.length > 50) {
     return res.status(400).json({ success: false, error: "Invalid service selection." });
+  }
+  // Optional — blank means "as soon as possible". When given it must be a real
+  // calendar date: round-trip it, since Date.parse rolls 2026-02-31 over to Mar 3.
+  if (date && !isRealISODate(date)) {
+    return res.status(400).json({ success: false, error: "Invalid preferred service date." });
   }
 
   // Never log customer PII (name/email/phone/message) to server logs.
@@ -144,6 +162,7 @@ app.post("/api/quote", quoteLimiter, async (req, res) => {
         phone,
         message,
         service,
+        date,
         type: "inquiry",
         token: process.env.QUOTE_WEBHOOK_TOKEN || "",
         source: "whistle-clean-website",
