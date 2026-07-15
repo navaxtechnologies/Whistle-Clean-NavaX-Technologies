@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://whistlecleaningsa.com/sitemap.xml
+Sitemap: https://whistlecleantexas.com/sitemap.xml

@@ -30,7 +30,7 @@ export function useDocumentMeta(opts: { title: string; description?: string; pat
         canonical.setAttribute("rel", "canonical");
         document.head.appendChild(canonical);
       }
-      canonical.setAttribute("href", `https://whistlecleaningsa.com${opts.path}`);
+      canonical.setAttribute("href", `https://whistlecleantexas.com${opts.path}`);
     }
 
     return () => {
