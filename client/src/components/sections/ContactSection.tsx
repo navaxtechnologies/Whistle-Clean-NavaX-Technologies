@@ -70,6 +70,7 @@ export default function ContactSection() {
     service: "",
     date: "",
     message: "",
+    company: "", // honeypot — must stay empty for real users
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -103,6 +104,7 @@ export default function ContactSection() {
       service: sanitizeInput(formData.service),
       date: sanitizeInput(formData.date),
       message: sanitizeInput(formData.message.trim()),
+      company: formData.company, // honeypot — forwarded so the server can drop bots
     };
 
     // In production, this would send to a secure backend endpoint
@@ -121,7 +123,7 @@ export default function ContactSection() {
       toast.success(t("Thank you! We'll get back to you within 24 hours.", "¡Gracias! Le responderemos dentro de las próximas 24 horas."), {
         description: t("Your quote request for ", "Su solicitud de cotización para ") + (formData.date || t("as soon as possible", "lo antes posible")) + t(" has been received.", " ha sido recibida."),
       });
-      setFormData({ name: "", email: "", phone: "", service: "", date: "", message: "" });
+      setFormData({ name: "", email: "", phone: "", service: "", date: "", message: "", company: "" });
     } catch (err) {
       toast.error(t("Something went wrong. Please try again later.", "Algo salió mal. Por favor intente de nuevo más tarde."), {
         description: t("You can also call us directly at (210) 859-4422.", "También puede llamarnos directamente al (210) 859-4422.")
@@ -151,6 +153,19 @@ export default function ContactSection() {
           {/* Form */}
           <AnimatedSection className="lg:col-span-3">
             <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8">
+              {/* Honeypot: hidden from real users; only bots fill it. */}
+              <div className="absolute w-px h-px overflow-hidden -left-[9999px]" aria-hidden="true">
+                <label htmlFor="company">Company (leave blank)</label>
+                <input
+                  id="company"
+                  name="company"
+                  type="text"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={formData.company}
+                  onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                />
+              </div>
               <div className="grid sm:grid-cols-2 gap-4 mb-4">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="text-sm font-medium text-slate-700">{t("Full Name *", "Nombre Completo *")}</Label>
