@@ -22,9 +22,11 @@
  */
 
 // ===== CONFIG — EDIT THESE =====
-var SECRET = 'CHANGE_ME_to_a_long_random_string'; // must match the server's QUOTE_WEBHOOK_TOKEN
+var SECRET = 'Yt9sMOrazQSF18D2N5xiHKRoGgCTW3dE'; // must match the server's QUOTE_WEBHOOK_TOKEN
 var NOTIFY_EMAIL = 'whistleclean100@gmail.com';
 var SHEET_NAME = 'Leads';
+var SHEET_ID = '';   // REQUIRED if this script is NOT bound to the Sheet: the long
+                     // id from the spreadsheet URL, docs.google.com/spreadsheets/d/<THIS>/edit
 var CALENDAR_ID = 'primary';            // 'primary' = the account's main calendar
 var CREATE_EVENT_FOR_INQUIRIES = true;  // contact-form inquiries → calendar follow-up
 var EMAIL_ON_BOOKING = true;            // also email on Calendly bookings (Calendly emails too)
@@ -103,7 +105,12 @@ function findPhone(p) {
 }
 
 function getSheet() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  // openById works from both bound AND standalone script projects;
+  // getActiveSpreadsheet() is null in standalone ones (a real footgun).
+  var ss = SHEET_ID
+    ? SpreadsheetApp.openById(SHEET_ID)
+    : SpreadsheetApp.getActiveSpreadsheet();
+  if (!ss) throw new Error('No spreadsheet: set SHEET_ID (script is not bound to a Sheet).');
   var sh = ss.getSheetByName(SHEET_NAME);
   if (!sh) {
     sh = ss.insertSheet(SHEET_NAME);

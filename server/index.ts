@@ -176,6 +176,16 @@ app.post("/api/quote", quoteLimiter, async (req, res) => {
     if (!forward.ok) {
       throw new Error(`webhook responded with HTTP ${forward.status}`);
     }
+
+    // Apps Script returns HTTP 200 even for internal errors ({ok:false,...})
+    // and its doGet health check also says ok:true — so require the response
+    // to be a real doPost inquiry ack: ok:true AND a type echo.
+    const ack = (await forward.json().catch(() => null)) as
+      | { ok?: boolean; type?: string; error?: string }
+      | null;
+    if (!ack || ack.ok !== true || !ack.type) {
+      throw new Error(`webhook did not confirm delivery: ${JSON.stringify(ack).slice(0, 200)}`);
+    }
   } catch (err) {
     // Fail loudly: the customer sees an error (and a call/text fallback) so the
     // lead is never silently lost.
