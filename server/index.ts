@@ -98,9 +98,12 @@ const quoteLimiter = rateLimit({
 app.post("/api/quote", quoteLimiter, async (req, res) => {
   const raw = req.body ?? {};
 
-  // Honeypot: bots fill the hidden `company` field; humans never see it. Drop
+  // Honeypot: bots fill the hidden `wcx_note` field; humans never see it. Drop
   // the submission silently and return a fake success so bots learn nothing.
-  if (typeof raw.company === "string" && raw.company.trim() !== "") {
+  // (Deliberately NOT named "company"/"website" — Chrome autofill fills those
+  // for real users even with autocomplete="off", which silently ate real leads.)
+  if (typeof raw.wcx_note === "string" && raw.wcx_note.trim() !== "") {
+    console.warn("[quote] honeypot drop at", new Date().toISOString());
     return res.json({ success: true, message: "Quote request received." });
   }
 
