@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663477928365/9rtbpj8p5t4fRVrV2mhGb4/hero-bg-RjsgfhNY6KuBFVWstLEnPe.webp";
+const HERO_IMG = "/images/site/hero-bg.jpg";
 
 const serviceChips = [
   { en: "Apartments", es: "Apartamentos" },

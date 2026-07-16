@@ -6,7 +6,7 @@ import { CheckCircle2 } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const ABOUT_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663477928365/9rtbpj8p5t4fRVrV2mhGb4/about-section-8u5HqZgfUsGZhR356df65P.webp";
+const ABOUT_IMG = "/images/site/about.jpg";
 
 const highlights = [
   { text: "Apartments, houses, and condos", es: "Apartamentos, casas y condominios" },
@@ -28,7 +28,7 @@ export default function AboutSection() {
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img
                   src={ABOUT_IMG}
-                  alt={t("Whistle Clean professional team at work", "El equipo profesional de Whistle Clean trabajando")}
+                  alt={t("A kitchen left spotless after a Whistle Clean make-ready", "Una cocina impecable después de una limpieza de Whistle Clean")}
                   className="w-full h-[320px] sm:h-[400px] lg:h-[480px] object-cover"
                   loading="lazy"
                 />

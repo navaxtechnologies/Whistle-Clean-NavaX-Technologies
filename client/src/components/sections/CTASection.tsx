@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const CTA_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663477928365/9rtbpj8p5t4fRVrV2mhGb4/cta-bg-2NsZmZwcgoK3a6SbcGX4gZ.webp";
+const CTA_BG = "/images/site/cta-bg.jpg";
 
 export default function CTASection() {
   const { t } = useLanguage();
