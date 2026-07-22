@@ -15,8 +15,8 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const apartmentPrices = [
   { label: "Full Cleaning — Efficiency", labelEs: "Limpieza Completa — Eficiencia", price: "$95" },
   { label: "Full Cleaning — 1×1 Apartment", labelEs: "Limpieza Completa — Apartamento 1×1", price: "$115" },
-  { label: "Full Cleaning — 2×2 Apartment", labelEs: "Limpieza Completa — Apartamento 2×2", price: "$125" },
-  { label: "Full Cleaning — 3×2 Apartment", labelEs: "Limpieza Completa — Apartamento 3×2", price: "$135" },
+  { label: "Full Cleaning — 2×2 Apartment", labelEs: "Limpieza Completa — Apartamento 2×2", price: "$155" },
+  { label: "Full Cleaning — 3×2 Apartment", labelEs: "Limpieza Completa — Apartamento 3×2", price: "$195" },
   { label: "Touch-Up Cleaning", labelEs: "Limpieza de Retoque", price: "$60" },
   { label: "Heavy / Deep Cleaning (add-on)", labelEs: "Limpieza Pesada / Profunda (adicional)", price: "$40" },
 ];
