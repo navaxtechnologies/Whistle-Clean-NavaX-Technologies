@@ -13,12 +13,12 @@ import { useDocumentMeta } from "@/lib/seo";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const apartmentPrices = [
-  { label: "Full Cleaning — Efficiency", labelEs: "Limpieza Completa — Eficiencia", price: "$95" },
-  { label: "Full Cleaning — 1×1 Apartment", labelEs: "Limpieza Completa — Apartamento 1×1", price: "$115" },
-  { label: "Full Cleaning — 2×2 Apartment", labelEs: "Limpieza Completa — Apartamento 2×2", price: "$155" },
-  { label: "Full Cleaning — 3×2 Apartment", labelEs: "Limpieza Completa — Apartamento 3×2", price: "$195" },
+  { label: "Full Cleaning — Efficiency", labelEs: "Limpieza Completa — Eficiencia", price: "$105" },
+  { label: "Full Cleaning — 1×1 Apartment", labelEs: "Limpieza Completa — Apartamento 1×1", price: "$125" },
+  { label: "Full Cleaning — 2×2 Apartment", labelEs: "Limpieza Completa — Apartamento 2×2", price: "$145" },
+  { label: "Full Cleaning — 3×2 Apartment", labelEs: "Limpieza Completa — Apartamento 3×2", price: "$165" },
   { label: "Touch-Up Cleaning", labelEs: "Limpieza de Retoque", price: "$60" },
-  { label: "Heavy / Deep Cleaning (add-on)", labelEs: "Limpieza Pesada / Profunda (adicional)", price: "$40" },
+  { label: "Heavy / Deep Cleaning (add-on)", labelEs: "Limpieza Pesada / Profunda (adicional)", price: "$60" },
 ];
 
 export default function Pricing() {
@@ -26,7 +26,7 @@ export default function Pricing() {
   useDocumentMeta({
     title: "Pricing | Apartment & Office Cleaning | Whistle Clean San Antonio",
     description:
-      "Whistle Clean San Antonio pricing: apartment cleaning from $95 (efficiency, 1×1, 2×2, 3×2), touch-up and deep cleaning, plus custom quotes for offices & laundry rooms. Materials and labor included.",
+      "Whistle Clean San Antonio pricing: apartment cleaning from $105 (efficiency, 1×1, 2×2, 3×2), touch-up and deep cleaning, plus custom quotes for offices & laundry rooms. Materials and labor included.",
     path: "/pricing",
   });
 
